@@ -1,14 +1,24 @@
-let degree = +prompt("Enter your degree ")
-if(100 < degree){
-    console.log("You are enter Wrong degree")
-}else if(93 <= degree ){
-    console.log("Your grade is Exllent")
-}else if(83 <= degree ){
-    console.log("Your grade is Very good")
-}else if(70 <= degree ){
-    console.log("Your grade is Good")
-}else if(60 <= degree ){
-    console.log("Your grade is Acceptable")
-}else{
-    console.log("Your grade is Fall")
+let degree = +prompt("Enter your degree");
+switch (Math.floor(degree / 10)) {
+  case 10:
+  case 9:
+    console.log("your grade is : Exllant");
+    break;
+  case 8:
+    console.log("your grade is : Very good");
+    break;
+  case 7:
+    console.log("your grade is : Good");
+    break;
+  case 6:
+    console.log("your grade is : Acceptable");
+    break;
+  case 5:
+  case 4:
+  case 3:
+  case 2:
+  case 1:
+  case 0:
+    console.log("your grade is : Fall");
+    break;
 }
